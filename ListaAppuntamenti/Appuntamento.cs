@@ -29,9 +29,20 @@ namespace ListaAppuntamenti
         }
 
         
-        public DateTime setcambiaAppuntamento()
+        public  DateTime setcambiaAppuntamento()
         {
-            DateTime nuovaData = new DateTime();
+          
+        }
+
+        public DateTime checkdata(DateTime dataAppuntamento)
+        {
+            if (dataAppuntamento < dataOdierna)
+            {
+                Console.WriteLine("Non puoi inserire una data antecedente alla data odierna");
+            }
+            else
+
+            return dataAppuntamento;
         }
         public string getnome()
         {

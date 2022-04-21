@@ -24,6 +24,7 @@ for (int i = 0; i < numAppuntamenti; i++)
 
     Console.WriteLine("inserisci la data dell'appuntamento");
     string dataAppuntamento = Console.ReadLine();
+    Appuntamento.checkdata(dataAppuntamento);
     DateTime dataInserita = DateTime.Parse(dataAppuntamento);
 
     Appuntamento appuntamento1 = new Appuntamento(nome, cognome, titoloAppuntamento,luogoAppuntamento, dataInserita);
@@ -42,5 +43,5 @@ string risposta = Console.ReadLine();
 if (risposta == "si")
 
 {
-    Appuntamento.cambiaAppuntamento()
+    Appuntamento.setcambiaAppuntamento()
 }
